@@ -47,15 +47,11 @@ body.dark-mode {
 }
 
 h1 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: auto;
-    text-align: left;
+    position: static;
     margin: 0;
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.5);
-    color: #FFF;
+    padding: 0;
+    background: none;
+    color: inherit;
 }
 
 header {
@@ -63,29 +59,40 @@ header {
     top: 0;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
-    padding: 20px;
+    padding: 10px 20px;
     background: rgba(0, 0, 0, 0.5);
     color: #FFF;
 }
 
 header #logo {
-    flex: 1;
+    flex: 0;
     text-align: left;
     margin-right: 20px;
+}
+
+header #logo h1 {
+    margin: 0;
+    padding: 0;
+    background: none;
+    color: inherit;
+    box-shadow: none;
+    font-size: 1.5em;
 }
 
 header #search {
     flex: 2;
     display: flex;
     justify-content: flex-start;
+    align-items: center;
 }
 
 header #welcome {
     flex: 1;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 header #search input[type="text"] {
@@ -140,6 +147,19 @@ header #actions .toggle-button, header #actions .cart-button {
 
 header #actions .toggle-button:hover, header #actions .cart-button:hover {
     background-color: #0056b3;
+}
+
+header #actions .cart-button {
+    position: absolute;
+    top: calc(100% + 10px); 
+    right: 20px; 
+    background-color: #007BFF;
+    color: #FFF;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 a, input[type="submit"] {
