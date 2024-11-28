@@ -1,0 +1,166 @@
+* {
+    font-family: Helvetica;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 15px;
+    margin: 0;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+body.light-mode {
+    background: rgba(255, 255, 255, 0.8);
+    color: #000;
+}
+
+body.dark-mode {
+    background: rgba(0, 0, 0, 0.8);
+    color: #FFF;
+}
+
+.toggle-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #007BFF;
+    color: #FFF;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-button:hover {
+    background-color: #0056b3;
+}
+
+.hide {
+    display: none;
+}
+
+h1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+    text-align: left;
+    margin: 0;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #FFF;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #FFF;
+}
+
+header #logo {
+    flex: 1;
+    text-align: left;
+    margin-right: 20px;
+}
+
+header #search {
+    flex: 2;
+    display: flex;
+    justify-content: flex-start;
+}
+
+header #welcome {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+header #search input[type="text"] {
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid #007BFF;
+    outline: none;
+    width: 300px;
+}
+
+header #search button {
+    padding: 10px 20px;
+    border-radius: 0 5px 5px 0;
+    border: 1px solid #007BFF;
+    background-color: #007BFF;
+    color: #FFF;
+    cursor: pointer;
+}
+
+header .welcome-button, header .register-button {
+    background-color: #007BFF;
+    color: #FFF;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: background-color 0.3s ease;
+}
+
+header .welcome-button:hover, header .register-button:hover {
+    background-color: #0056b3;
+}
+
+header #actions {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header #actions .toggle-button, header #actions .cart-button {
+    background-color: #007BFF;
+    color: #FFF;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+
+header #actions .toggle-button:hover, header #actions .cart-button:hover {
+    background-color: #0056b3;
+}
+
+a, input[type="submit"] {
+    background-color: #007BFF;
+    color: #FFF;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    opacity: .7;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+a:hover, input[type="submit"]:hover {
+    opacity: 1;
+}
+
+a:focus, input[type="submit"]:focus {
+    outline: 2px solid #0056b3;
+    outline-offset: 2px;
+}
+

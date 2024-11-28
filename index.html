@@ -3,14 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eletrônicos S.A</title>
+    <title>Modo Claro e Escuro</title>
     <link rel="stylesheet" href="css/estilo.css">
 </head>
 
-<body>
+<body class="light-mode">
     <header>
         <div id="logo">
             <h1>FOR ELETRONICS</h1>
+        </div>
+        <div id="search">
+            <input type="text" placeholder="Buscar..."> 
+            <button>Buscar</button>
+        </div>
+        <div id="welcome">
+            <button class="welcome-button">Bem-vindo</button>
+            <button class="register-button">Cadastre-se</button>
+        </div>
+        <div id="actions">
+            <button class="toggle-button">Toggle Mode</button>
+            <button class="cart-button">Carrinho</button>
         </div>
     </header>
 
@@ -19,17 +31,12 @@
             <a href="#">meus pedidos</a> &nbsp; <a href="#">favoritos</a> &nbsp; <a href="#">minhas compras</a>
         </div>
 
-        <br>
-        <input type="text"> <button>buscar</button>
-
         <h2>ofertas imperdíveis</h2>
-        
-    
     </main>
 
     <footer>
         <p>todos os direitos reservados</p>
-        <script src="js/controle.js"></script>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
